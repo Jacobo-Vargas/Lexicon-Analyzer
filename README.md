@@ -17,7 +17,7 @@ El proyecto no utiliza expresiones regulares ni bibliotecas externas. Solo usa P
   - Palabras reservadas: def, do, end, if, else, case, when, fn, true, false
   - Operadores:
     - Aritméticos: +, -, *, /, %
-    - Comparación: ==, !=, <, >, <=, >=
+    - Comparación: ===, ==, !=, <, >, <=, >=
     - Lógicos: and, or, not
     - Asignación: =
     - Incremento/Decremento: ++, --
