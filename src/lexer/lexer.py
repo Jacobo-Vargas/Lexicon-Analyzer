@@ -96,8 +96,10 @@ def analizar_codigo(codigo):
 
             if i < len(codigo) and codigo[i] == "=":
                 lexema += codigo[i]
+                if lexema == "==" and codigo[i + 1] == "=":
+                    lexema += codigo[i+1]
                 i += 1
-                if lexema in {"==", "!=", "<=", ">="}:
+                if lexema in {"==", "!=", "<=", ">=", "==="}:
                     tokens.append(Token(lexema, TOKEN_TYPES["COMPARISON_OP"], inicio))
                 else:
                     tokens.append(Token(lexema, TOKEN_TYPES["UNKNOWN"], inicio))
